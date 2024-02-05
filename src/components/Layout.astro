@@ -1,0 +1,23 @@
+---
+// The frontmatter script is where you import components or define local data.
+// Components used within the layout could be imported here.
+import Navbar from "./Navbar.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio Title</title>
+  </head>
+  <body>
+    <Navbar />
+    <main>
+      <!-- Slot is where the page-specific content will be injected -->
+      <slot />
+    </main>
+    <footer>
+      <p>© [Your Name]. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
